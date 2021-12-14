@@ -1,0 +1,27 @@
+
+			.content {
+		  max-width: 80%;
+      max-height: 80%;
+		  padding: 2rem;
+		  margin: auto;
+		  line-height: 1.5rem;
+		  font-size: 24px;
+      background-color:rgba(255, 0, 0, 0.8);
+      margin: auto;
+      margin-top: 1em;
+		}
+		h1,h2,h4,h5,h6 {
+		  margin: 3em 0 1em;
+		}
+
+		ul,ol {
+		  margin-bottom: 2em;
+		  color: #1d1d1d;
+		  font-family: sans-serif;
+		}
+
+    p{
+      color:white;
+    }
+		
+body{background-image:url(https://c.tenor.com/MJr3VN-ZoJ8AAAAC/sus-jerma-sus.gif)}
