@@ -1,6 +1,6 @@
 <head>
 		<title><?php echo $title; ?></title>
-		<link rel="icon" href="Amogus1.png">
+		<link rel="icon" href="media/Amogus1.png">
 		<link id="mstyle" rel="stylesheet" href="css/<?php echo $stylesheet; ?>">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/switch.css">
@@ -24,7 +24,7 @@
 				 </div><li>
 				<li>
 					<label class="form-switch">
-					<input type="checkbox" onchange="if(this.checked){document.getElementById('mstyle').disabled=true} else {document.getElementById('mstyle').disabled=false}">
+					<input type="checkbox" onchange="document.getElementById('mstyle').disabled= this.checked ? true : false">
 					<i></i>
 					sus
 					</label>
