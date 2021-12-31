@@ -1,6 +1,5 @@
 <?php
-
-require_once("{$_SERVER['DOCUMENT_ROOT']}/router.php");
+require_once("router.php");
 
 // ##################################################
 // ##################################################
@@ -43,6 +42,15 @@ get('/item/$name', 'views/items.php');
 any('/404','views/404.php');
 */
 
-any('/','index.php');
-any('/404','404.php');
+any('/','views/index.php');
+any('/classic','views/classic.php');
+
+
+
+
+
+//NOTHING AFTER 404 or it wont work, no idea why
+any('/404','views/404.php');
+
+
 

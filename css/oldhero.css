@@ -1,0 +1,38 @@
+.layer {
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    z-index: -1;
+    }
+
+.layer-bg {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+  }
+.layer-1 {
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png");
+background-position: left bottom;
+size: revert;
+}
+.layer-2 {
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
+}
+.layer-3 {
+background-image: url("../media/hero/anogus.png");
+background-position: 85% bottom;
+background-size: 402px 476px;
+}
+.layer-4 {
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
+}
+.layer-overlay {
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+}
+
+#hero-mobile {
+    display: none;
+    background: url("https://i.ibb.co/d7hw559/full-illustration.png") no-repeat center bottom / cover;
+    height: 320px;
+  }
