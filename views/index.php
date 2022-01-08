@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amogus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/oldhero.css" id="mstyle" disabled>
+    <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
+    <link rel="stylesheet" href="css/oldhero.css?v=<?php echo rand(0,1000000) ?>" id="mstyle" disabled>
     <link rel="stylesheet" href="css/switch.css">
 
   </head>
@@ -81,6 +81,7 @@
           topDistance = this.pageYOffset;
           layers = document.getElementsByClassName("parallax");
           jlayers = document.getElementsByClassName("rotate");
+
           applytransform(layers, 'translate3d(0, [1]px, 0)', topDistance)
           applytransform(jlayers, 'translate3d([0.1]px, [-2]px, 0) rotate([-1]deg)', topDistance, -1)
 

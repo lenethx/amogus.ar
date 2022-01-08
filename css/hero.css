@@ -51,14 +51,14 @@ background-color:black;
 }
 .layer-1 {
 background-image: url("../media/hero/ejected2.png");
-size: 77px 101px;
+
 }
 .layer-2 {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
 }
 .layer-3 {
 background-image: url("../media/hero/anogus.png");
-background-position: 85% bottom;
+background-position: right bottom;
 background-size: 402px 476px;
 }
 .layer-4 {
@@ -68,12 +68,25 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_0
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
 }
 @media only screen and (max-width: 768px) {
-#hero {
-    display: none;
-}
-#hero-mobile {
-    display: block;
-}
+	#hero  {
+		min-height: 320px;
+		height: 320px;
+	}
+	#hero div {
+		min-height: 320px;
+		
+		height: 320px;
+		
+	}
+	.layer-3{
+			background-size: 150px 180px
+	}
+	
+	.layer-1{/*
+		size: revert;
+		background-size:auto
+	*/
+	}
 }
 .tutorial-link {
 color: #fff;
