@@ -6,7 +6,7 @@ body {
     color: #fff;
 }
 #hero {
-height: 800px;
+height: 100vh;
 overflow: hidden;
 position: relative;
 }
@@ -18,7 +18,7 @@ background-position: bottom center;
 background-size: auto;
 background-repeat: no-repeat;
 width: 100%;
-height: 800px;
+height: 100vh;
 position: fixed;
 z-index: -1;
 }
@@ -44,7 +44,7 @@ font-size: 18px;
 line-height: 150%;
 }
 #hero, .layer {
-min-height: 800px;
+min-height: 100vh;
 }
 .layer-bg {
 background-color:black;
@@ -83,24 +83,21 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_0
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
 }
 @media only screen and (max-width: 768px) {
-	#hero  {
-		min-height: 320px;
-		height: 320px;
-	}
-	#hero div {
-		min-height: 320px;
-		
-		height: 320px;
-		
-	}
+	#hero, .layer {
+		min-height: 40vh;
+		height:40vh;
+		background-size:cover
+		}
+
 	.layer-3{
-			background-size: 150px 180px
+		background-size: 150px 180px;
 	}
 	
-	.layer-1{/*
-		size: revert;
-		background-size:auto
-	*/
+	.layer-1{
+		width:75px;
+		height:100px;
+		min-height: 100px;
+		background-size:cover;
 	}
 }
 .tutorial-link {
@@ -135,3 +132,6 @@ color: #ede0d5;
 	position: absolute
 }
 
+.impostor {
+	transform: translate(-100px, 0);
+}

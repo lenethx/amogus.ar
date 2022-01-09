@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
     <link rel="stylesheet" href="css/oldhero.css?v=<?php echo rand(0,1000000) ?>" id="mstyle" disabled>
     <link rel="stylesheet" href="css/switch.css">
-	<script src="js/scroll.js" defer></script>
+	<script src="js/scroll.js?v=<?php echo rand(0,1000000) ?>" defer></script>
 
   </head>
   <body>
