@@ -9,22 +9,28 @@
     <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
     <link rel="stylesheet" href="css/oldhero.css?v=<?php echo rand(0,1000000) ?>" id="mstyle" disabled>
     <link rel="stylesheet" href="css/switch.css">
+	<script src="js/scroll.js" defer></script>
 
   </head>
   <body>
     <label class="form-switch">
-      <input class="asswitch" type="checkbox" onchange="document.getElementById('mstyle').disabled= this.checked ? false : true;   document.getElementById('impostor').classList.toggle('rotate'); document.getElementById('impostor').classList.toggle('parallax')">
+      <input class="asswitch" type="checkbox" onchange="asswitch(this)">
       <i></i>
     </label>
     <div id="hero">
       <div class="layer-bg layer parallax"  data-depth="0.10"></div>
-      <div id="impostor" class="layer-1 layer rotate"  data-depth="0.20"></div>
+      <div class="layer-star1 layer hor-parallax"  data-depth="0.10"></div>
+      <div class="layer-star2 layer hor-parallax"  data-depth="0.20"></div>
+      <div class="layer-star3 layer hor-parallax"  data-depth="0.30"></div>
+      <div class=" overimp"> 
+			  <div id="impostor" class="layer layer-1 rotate impostor"  data-depth="0.20"></div>
+	    </div>
+	 
       <div class="layer-2 layer parallax"  data-depth="0.50"></div>
       <div class="layer-3 layer parallax"  data-depth="0.80"></div>
       <div class="layer-overlay layer parallax"  data-depth="0.85"></div>
       <div class="layer-4 layer parallax"  data-depth="1.00"></div>
     </div>
-    <div id="hero-mobile"></div>
     <div id="content">
       <div class="container">
         <section class="first-section">
@@ -55,40 +61,7 @@
       </div>
       
     </div>
-    <script>
 
-        function applytransform(layers, beforestr, topDistance,){
-          for (let layer of layers){
-            
-            depth = layer.getAttribute('data-depth');
-            movement = (-(topDistance * depth));
-            a=beforestr
-            while (a.indexOf('[')>=0){
-              a=a.substring(0,a.indexOf('['))+(a.substring(a.indexOf('[')+1,a.indexOf(']'))*movement)+a.substring(a.indexOf(']')+1)
-            }
-            console.log(a)
-            layer.style['-webkit-transform'] = a;
-            layer.style['-moz-transform'] = a;
-            layer.style['-ms-transform'] = a;
-            layer.style['-o-transform'] = a;
-            layer.style.transform = a;
-          }
-        }
-
-        (function() {
-        window.addEventListener('scroll', function(event) {
-          var depth, layer, layers, movement, topDistance, translate3d, jlayers, rotate3d;
-          topDistance = this.pageYOffset;
-          layers = document.getElementsByClassName("parallax");
-          jlayers = document.getElementsByClassName("rotate");
-
-          applytransform(layers, 'translate3d(0, [1]px, 0)', topDistance)
-          applytransform(jlayers, 'translate3d([0.1]px, [-2]px, 0) rotate([-1]deg)', topDistance, -1)
-
-          
-        });
-      }).call(this);
-    </script>
   </body>
 </html>
 

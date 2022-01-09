@@ -49,9 +49,24 @@ min-height: 800px;
 .layer-bg {
 background-color:black;
 }
-.layer-1 {
-background-image: url("../media/hero/ejected2.png");
 
+.layer-star1 {
+	background-image: url("../media/hero/scrollstar1.png");
+
+}
+.layer-star2 {
+	background-image: url("../media/hero/scrollstar2.png");
+}
+.layer-star3 {
+	background-image: url("../media/hero/scrollstar3.png");
+}
+
+.layer-1 {
+	background-image: url("../media/hero/ejected2.png");
+	width:75px;
+	height:100px;
+	min-height: 100px;
+	background-size:cover;
 }
 .layer-2 {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
@@ -110,5 +125,13 @@ color: #ede0d5;
 .clarification{
     font-size: 10px;
     max-width: 300px;
+}
+
+.overimp{
+	display:flex; 
+	align-items:center; 
+	height :100%; 
+	width:100%; 
+	position: absolute
 }
 

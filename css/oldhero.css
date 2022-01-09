@@ -13,7 +13,7 @@
   }
 .layer-1 {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png");
-/*background-position: left bottom;*/
+/*background-position: left ;*/
 
 }
 .layer-2 {
@@ -37,6 +37,9 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
     height: 320px;
   }
   
+.hor-parallax{
+	display:none
+}
   
 @media only screen and (max-width: 768px) {
 	#hero  {
