@@ -18,7 +18,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #hero {
-height: 100vh;
+height: 50vw;
 overflow: hidden;
 position: relative;
 }
@@ -30,7 +30,7 @@ background-position: bottom center;
 background-size: auto;
 background-repeat: no-repeat;
 width: 100%;
-height: 100vh;
+height: 50vw;
 position: fixed;
 z-index: -1;
 }
@@ -52,7 +52,7 @@ font-size: 18px;
 line-height: 150%;
 }
 #hero, .layer {
-height: 100vh;
+height: 50vw;
 background-size:cover
 }
 .layer-bg {
@@ -94,7 +94,7 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 }
 @media only screen and (max-width: 768px) {
 	#hero, .layer {
-		height:40vh;
+		height:50vw;
 		background-size:cover
 		}
 
