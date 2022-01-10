@@ -4,7 +4,19 @@ body {
     background-color: #130d0a;
     font-family: "Playfair Display", serif;
     color: #fff;
+	overflow: overlay;
+
 }
+
+body::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 201, 0.3)
+	;
+}
+
 #hero {
 height: 100vh;
 overflow: hidden;
