@@ -11,19 +11,20 @@
 
   </head>
   <body>
-    <div id="hero">
-      <div class="layer-bg layer parallax"  data-depth="0.10"></div>
-      <div class="layer-star1 layer hor-parallax"  data-depth="0.10"></div>
-      <div class="layer-star2 layer hor-parallax"  data-depth="0.20"></div>
-      <div class="layer-star3 layer hor-parallax"  data-depth="0.30"></div>
-      <div class=" overimp"> 
-			  <div id="impostor" class="layer layer-1 impostor"  data-depth="0.20"></div>
-	    </div>
-	 
-      <div class="layer-2 layer parallax"  data-depth="0.50"></div>
-      <div class="layer-3 layer parallax"  data-depth="0.80"></div>
-      <div class="layer-overlay layer parallax"  data-depth="0.85"></div>
-      <div class="layer-4 layer parallax" data-depth="0"></div>
+    <div class="stickbox">
+      <div id="hero">
+        <div class="layer-bg layer parallax"  data-depth="0.10"></div>
+        <div class="layer-star1 layer hor-parallax"  data-depth="0.10"></div>
+        <div class="layer-star2 layer hor-parallax"  data-depth="0.20"></div>
+        <div class="layer-star3 layer hor-parallax"  data-depth="0.30"></div>
+        <div class=" overimp"> 
+              <div id="impostor" class="layer layer-1 impostor"  data-depth="0.20"></div>
+            </div>
+        <div class="layer-2 layer parallax"  data-depth="0.50"></div>
+        <div class="layer-3 layer parallax"  data-depth="0.80"></div>
+        <div class="layer-overlay layer parallax"  data-depth="0.85"></div>
+        <div class="layer-4 layer parallax" data-depth="1.60"></div>
+      </div>
     </div>
     <div id="content">
       <div class="container">
