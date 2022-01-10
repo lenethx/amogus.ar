@@ -8,15 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
     <link rel="stylesheet" href="css/oldhero.css?v=<?php echo rand(0,1000000) ?>" id="mstyle" disabled>
-    <link rel="stylesheet" href="css/switch.css">
 	<script src="js/scroll.js?v=<?php echo rand(0,1000000) ?>" defer></script>
 
   </head>
   <body>
-    <label class="form-switch">
-      <input class="asswitch" type="checkbox" onchange="asswitch(this)">
-      <i></i>
-    </label>
     <div id="hero">
       <div class="layer-bg layer parallax"  data-depth="0.10"></div>
       <div class="layer-star1 layer hor-parallax"  data-depth="0.10"></div>
@@ -29,7 +24,7 @@
       <div class="layer-2 layer parallax"  data-depth="0.50"></div>
       <div class="layer-3 layer parallax"  data-depth="0.80"></div>
       <div class="layer-overlay layer parallax"  data-depth="0.85"></div>
-      <div class="layer-4 layer parallax"  data-depth="1.00"></div>
+      <div class="layer-4 layer"></div>
     </div>
     <div id="content">
       <div class="container">

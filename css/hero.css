@@ -22,11 +22,7 @@ height: 100vh;
 position: fixed;
 z-index: -1;
 }
-#hero-mobile {
-display: none;
-background: url("https://i.ibb.co/d7hw559/full-illustration.png") no-repeat center bottom / cover;
-height: 320px;
-}
+
 .first-section {
 padding: 50px 0 20px 0;
 }
@@ -44,7 +40,8 @@ font-size: 18px;
 line-height: 150%;
 }
 #hero, .layer {
-min-height: 100vh;
+height: 100vh;
+background-size:cover
 }
 .layer-bg {
 background-color:black;
@@ -63,28 +60,27 @@ background-color:black;
 
 .layer-1 {
 	background-image: url("../media/hero/ejected2.png");
-	width:75px;
-	height:100px;
-	min-height: 100px;
+	width:6vw;
+	height:7.5vw;
 	background-size:cover;
 }
 .layer-2 {
-background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
+	background-image: url("../media/hero/among-us-accusations.png?v=2");
 }
 .layer-3 {
 background-image: url("../media/hero/anogus.png");
 background-position: right bottom;
-background-size: 402px 476px;
+background-size: 20.1vw 24vw;
 }
 .layer-4 {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
+position: relative;
 }
 .layer-overlay {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
 }
 @media only screen and (max-width: 768px) {
 	#hero, .layer {
-		min-height: 40vh;
 		height:40vh;
 		background-size:cover
 		}
@@ -96,7 +92,6 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	.layer-1{
 		width:75px;
 		height:100px;
-		min-height: 100px;
 		background-size:cover;
 	}
 }
@@ -109,11 +104,6 @@ text-decoration: underline;
 color: #ede0d5;
 }
 
-.form-switch{
-    position: absolute !important;
-    right: 0;
-    z-index: 10;
-}
 
 .qauthor{
     text-align: right;

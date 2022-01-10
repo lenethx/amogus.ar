@@ -30,14 +30,6 @@ window.addEventListener('scroll', function(event) {
   applytransform(layers, 'translate3d(0, [1]px, 0)', topDistance)
   applytransform(hlayers, 'translate3d([-1]px, [0.5]px, 0) ', topDistance);
   impostor=document.getElementsByClassName("impostor");
-  applytransform(impostor, 'translate3d([-2.15]px, [0.7]px, 0) rotate([0.6]deg)', topDistance, [1,1,1], [-100,0,0]);
+  applytransform(impostor, 'translate3d(calc([-2.15]px - 8vw), [0.7]px, 0) rotate([0.6]deg)', topDistance, [1,1,1]);
 });  
 
-
-function asswitch(athis){
-	document.getElementById('mstyle').disabled= athis.checked ? false : true;   
-	document.getElementById('impostor').classList.toggle('impostor'); 
-	document.getElementById('impostor').classList.toggle('parallax');
-
-	console.log(document.getElementById('mstyle'),athis.checked)
-}
