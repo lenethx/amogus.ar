@@ -7,7 +7,6 @@
     <title>Amogus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
-    <link rel="stylesheet" href="css/oldhero.css?v=<?php echo rand(0,1000000) ?>" id="mstyle" disabled>
 	<script src="js/scroll.js?v=<?php echo rand(0,1000000) ?>" defer></script>
 
   </head>
@@ -18,13 +17,13 @@
       <div class="layer-star2 layer hor-parallax"  data-depth="0.20"></div>
       <div class="layer-star3 layer hor-parallax"  data-depth="0.30"></div>
       <div class=" overimp"> 
-			  <div id="impostor" class="layer layer-1 rotate impostor"  data-depth="0.20"></div>
+			  <div id="impostor" class="layer layer-1 impostor"  data-depth="0.20"></div>
 	    </div>
 	 
       <div class="layer-2 layer parallax"  data-depth="0.50"></div>
       <div class="layer-3 layer parallax"  data-depth="0.80"></div>
       <div class="layer-overlay layer parallax"  data-depth="0.85"></div>
-      <div class="layer-4 layer"></div>
+      <div class="layer-4 layer parallax" data-depth="0"></div>
     </div>
     <div id="content">
       <div class="container">

@@ -27,9 +27,9 @@ window.addEventListener('scroll', function(event) {
   topDistance = this.pageYOffset;
   layers = document.getElementsByClassName("parallax");
   hlayers = document.getElementsByClassName("hor-parallax");
-  applytransform(layers, 'translate3d(0, [1]px, 0)', topDistance)
-  applytransform(hlayers, 'translate3d([-1]px, [0.5]px, 0) ', topDistance);
+  applytransform(layers, 'translate3d(0, calc([1]vh / 11), 0)', topDistance)
+  applytransform(hlayers, 'translate3d(calc([-1]vw / 19), calc([0.5]vh / 11) , 0) ', topDistance);
   impostor=document.getElementsByClassName("impostor");
-  applytransform(impostor, 'translate3d(calc([-2.15]px - 8vw), [0.7]px, 0) rotate([0.6]deg)', topDistance, [1,1,1]);
+  applytransform(impostor, 'translate3d(calc(calc(max([-2.15]vw, [-2.15]vh ) / 19) - '+(window.matchMedia("(max-width: 768px)").matches ? '15vw':'8vw')+'), calc([0.7]vh / 11), 0) rotate([0.6]deg)', topDistance, [1,1,1,1]);
 });  
 

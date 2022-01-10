@@ -63,6 +63,7 @@ background-color:black;
 	width:6vw;
 	height:7.5vw;
 	background-size:cover;
+	transform: translate(-8vw, 0);
 }
 .layer-2 {
 	background-image: url("../media/hero/among-us-accusations.png?v=2");
@@ -70,7 +71,7 @@ background-color:black;
 .layer-3 {
 background-image: url("../media/hero/anogus.png");
 background-position: right bottom;
-background-size: 20.1vw 24vw;
+background-size: 30.1vw 36vw;
 }
 .layer-4 {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
@@ -90,9 +91,10 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	}
 	
 	.layer-1{
-		width:75px;
-		height:100px;
+		width:15vw;
+		height:20.0vw;
 		background-size:cover;
+		transform: translate(-15vw);
 	}
 }
 .tutorial-link {
@@ -122,6 +124,3 @@ color: #ede0d5;
 	position: absolute
 }
 
-.impostor {
-	transform: translate(-100px, 0);
-}
