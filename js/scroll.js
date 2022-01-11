@@ -36,13 +36,13 @@ function applytransform(layers, beforestr, topDistance, ){
 
 
 window.addEventListener('scroll', function(event) {
-  var  layers, topDistance, hlayers, impostor; ;
-  topDistance = this.scrollY;
-  layers = document.getElementsByClassName("parallax");
-  hlayers = document.getElementsByClassName("hor-parallax");
-  impostor=document.getElementsByClassName("impostor");
-applytransform(layers, ['defer100','translate(0, calc(','vh / 11))'], topDistance)
-applytransform(hlayers, ['translate(calc(','defer100','vw / -19), calc(','vh / 22)) '], topDistance);
-applytransform(impostor, ['translate(calc(calc(max(','vw, ','defer100','vh ) / -1) - '+(window.matchMedia("(max-width: 768px)").matches ? '15vw':'8vw')+'), calc(','vh / 4)) rotate(calc(','deg * 2.5))'], topDistance);  
+	var  layers, topDistance, hlayers, impostor; ;
+	topDistance = this.scrollY;
+	layers = document.getElementsByClassName("parallax");
+	hlayers = document.getElementsByClassName("hor-parallax");
+	impostor=document.getElementsByClassName("impostor");
+	applytransform(layers, ['defer100','translate(0, calc(','vw / 22))'], topDistance)
+	applytransform(hlayers, ['translate(calc(','defer100','vw / -19), calc(','vh / 22)) '], topDistance);
+	applytransform(impostor, ['translate(calc(calc(max(','vw, ','defer100','vh ) / -1) - '+(window.matchMedia("(max-width: 768px)").matches ? '15vw':'8vw')+'), calc(','vh / 4)) rotate(calc(','deg * 2.5))'], topDistance);  
 });  
 

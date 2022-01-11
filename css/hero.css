@@ -87,7 +87,10 @@ background-size: 30.1vw 36vw;
 }
 .layer-4 {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
-/*position: relative;*/
+position: -webkit-sticky;
+position: sticky;
+top:0;
+z-index: 2;
 }
 .layer-overlay {
 background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
@@ -138,5 +141,11 @@ color: #ede0d5;
 
 .stickbox{
 	height: 150vw;
+}
+
+.abs100{
+	position: absolute;
+	height: 150vw;
+	width: 100%;
 }
 

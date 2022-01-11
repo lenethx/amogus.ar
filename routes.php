@@ -43,6 +43,7 @@ any('/404','views/404.php');
 */
 
 any('/','views/index.php');
+any('/tt','views/tt.php');
 any('/classic','views/classic.php');
 
 
