@@ -1,3 +1,7 @@
+:root{
+	--content-height:none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -24,6 +28,9 @@ position: relative;
 }
 #content {
 background-color: #130d0a;
+position: -webkit-sticky;
+position: sticky;
+top:50vw;
 }
 .layer {
 background-position: bottom center;
@@ -106,10 +113,10 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	}
 	
 	.layer-1{
-		width:15vw;
-		height:20.0vw;
+		width:10vw;
+		height:13.3vw;
 		background-size:cover;
-		transform: translate(-15vw);
+		transform: translate(-10vw);
 	}
 }
 .tutorial-link {
@@ -139,13 +146,23 @@ color: #ede0d5;
 	position: absolute
 }
 
-.stickbox{
+.stickbox150{
 	height: 150vw;
 }
 
-.abs100{
+.abs150{
 	position: absolute;
 	height: 150vw;
 	width: 100%;
+}
+
+#abscontent{
+	position: absolute;
+	height: 250vw;
+	width: 100%;
+}
+
+.parallax, .hor-parallax, .impostor{
+	will-change: transform;
 }
 
