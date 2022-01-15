@@ -41,13 +41,16 @@ function setContentHeight(){
 
 
 window.addEventListener('scroll', function(event) {
-	var  layers, topDistance, hlayers, impostor; ;
+	let layers, topDistance, hlayers, impostor, jlayers; 
 	topDistance = this.scrollY;
 	layers = document.getElementsByClassName("parallax");
 	hlayers = document.getElementsByClassName("hor-parallax");
+	jlayers=document.getElementsByClassName("just-hor-parallax");
 	impostor=document.getElementsByClassName("impostor");
+	prefooter=document.getElementById("prefooter");
 	applytransform(layers, ['defer100','translate(0, calc(','vw / 22))'], topDistance);
-	applytransform(hlayers, ['translate(calc(','defer100','vw / -19), calc(','vw / 44)) '], topDistance);
+	applytransform(hlayers, ['translate(calc(calc(','defer100','vw / -19) - 100vw), calc(','vw / 44)) '], topDistance);
+	applytransform(jlayers, ['defer'+(prefooter.offsetHeight/window.innerWidth*100),'translate(calc(calc(','vw / -19) - 100vw), 0 '], topDistance);
 	applytransform(impostor, ['translate(calc(calc(','defer100','vw  / -1.3) - '+(window.matchMedia("(max-width: 768px)").matches ? '10vw':'8vw')+'), calc(','vw / 8)) rotate(calc(','deg * 2.5))'], topDistance);  
 });  
 setContentHeight();

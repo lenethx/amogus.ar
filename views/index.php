@@ -7,11 +7,12 @@
     <title>Amogus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
-	<script src="js/scroll.js?v=<?php echo rand(0,1000000) ?>" defer></script>
-
+    <link rel="stylesheet" href="css/modal.css">
+	  <script src="js/scroll.js?v=<?php echo rand(0,1000000) ?>" defer></script>
+    <script src="js/modal.js" defer></script>
   </head>
   <body>
-  <div id="abscontent">
+    <div id="abscontent">
       <div id="content">
         <div class="container">
           <section class="first-section">
@@ -33,15 +34,53 @@
                 <p class="qauthor">― Kamand Kojouri</p>
                 <p>“This Fremen religious adaptation, then, is the source of what we now recognize as "The Pillars of the Universe," whose Qizara Tafwid are among us all with signs and proofs and prophecy.”</p>
                 <p class="qauthor">― Princess Irulan, Arrakis Awakening</p>
-                <a class="tutorial-link" href="https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27">
-                  Learn how to create this parallax effect</a>
+                
               </div>
+              
             </div>
           </section>
           <div class="clarification">A lot of these quotes are religious, but I'm not trying to make any point. I just found them while looking for impostor quotes.</div>
+          
+          <br><br><br>
+          
         </div>
+          
+          <div id="prefooter">
+            <div class="layer-bg footerlayer"  data-depth="0.10"></div>
+            <div class="layer-star1 star footerlayer just-hor-parallax"  data-depth="0.10"></div>
+            <div class="layer-star2 star footerlayer just-hor-parallax"  data-depth="0.20"></div>
+            <div class="layer-star3 star footerlayer just-hor-parallax"  data-depth="0.30"></div>
+            <div class="layer-overlay footerlayer"  data-depth="0.85"></div>
+            <div class="layer-4 footerlayer"></div>
+            <div class="layer-4 footerlayer flip180"></div>
+          </div>
       
+        <footer>
+          <div class="colcont">
+            <div class="footercol">
+              <a class="tutorial-link" href="https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27">
+                    Hero "image" inspiration
+              </a>
+              <button onclick="modal.open('ipmodal')">
+                  Dont like the website?
+              </button>
+              <div id="ipmodal" style="display:none">
+                <div class="ip"><b>
+                  <?php echo $_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR']; ?>
+                </b></div>
+
+              </div>
+            </div>
+            <div class="footercol">
+              <a href="https://github.com/lenethx/amogus.ar" class="github"><span class='gh-icon'></span>Contribute on Github</a>
+              <p>© <?php echo date("Y") ?> amogus.ar</p>    
+            </div>
+          </div>
+          <!--<hr>-->
+          
+        </footer>
       </div>
+      
     </div>
     <div class="stickbox150">
       <div class="abs150">
@@ -49,9 +88,9 @@
       </div>
       <div id="hero">
         <div class="layer-bg layer parallax"  data-depth="0.10"></div>
-        <div class="layer-star1 layer hor-parallax"  data-depth="0.10"></div>
-        <div class="layer-star2 layer hor-parallax"  data-depth="0.20"></div>
-        <div class="layer-star3 layer hor-parallax"  data-depth="0.30"></div>
+        <div class="layer-star1 star layer hor-parallax"  data-depth="0.10"></div>
+        <div class="layer-star2 star layer hor-parallax"  data-depth="0.20"></div>
+        <div class="layer-star3 star layer hor-parallax"  data-depth="0.30"></div>
         <div class=" overimp"> 
               <div id="impostor" class="layer layer-1 impostor"  data-depth="0.20"></div>
             </div>
@@ -63,7 +102,6 @@
       
     </div>
     
-
   </body>
 </html>
 

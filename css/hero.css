@@ -21,11 +21,28 @@ body::-webkit-scrollbar-thumb{
 	;
 }
 
-#hero {
+button,a {
+	background: none;
+	border: none;
+	padding: 0;
+	font-family: serif;
+	color: #64554d;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+button:hover,a:hover {
+	color: #928a86;
+}
+
+#hero, #prefooter {
 height: 50vw;
 overflow: hidden;
 position: relative;
 }
+
+
+
 #content {
 background-color: #130d0a;
 position: -webkit-sticky;
@@ -67,28 +84,28 @@ background-color:black;
 }
 
 .layer-star1 {
-	background-image: url("../media/hero/scrollstar1.png");
+	background-image: url("../media/hero/scrollstar1.webp");
 
 }
 .layer-star2 {
-	background-image: url("../media/hero/scrollstar2.png");
+	background-image: url("../media/hero/scrollstar2.webp");
 }
 .layer-star3 {
-	background-image: url("../media/hero/scrollstar3.png");
+	background-image: url("../media/hero/scrollstar3.webp");
 }
 
 .layer-1 {
-	background-image: url("../media/hero/ejected2.png");
+	background-image: url("../media/hero/ejected2.webp");
 	width:6vw;
 	height:7.5vw;
 	background-size:cover;
 	transform: translate(-8vw, 0);
 }
 .layer-2 {
-	background-image: url("../media/hero/among-us-accusations.png?v=2");
+	background-image: url("../media/hero/among-us-accusations.webp?v=2");
 }
 .layer-3 {
-background-image: url("../media/hero/anogus.png");
+background-image: url("../media/hero/anogus.webp");
 background-position: right bottom;
 background-size: 30.1vw 36vw;
 }
@@ -118,14 +135,6 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 		background-size:cover;
 		transform: translate(-10vw);
 	}
-}
-.tutorial-link {
-color: #fff;
-font-size: 18px;
-text-decoration: underline;
-}
-.tutorial-link:hover {
-color: #ede0d5;
 }
 
 
@@ -166,3 +175,83 @@ color: #ede0d5;
 	will-change: transform;
 }
 
+.github{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ede0d5;
+	border-radius: 3px;
+	width:15.5rem;
+	margin: 0.5rem;
+	padding: 0.13em;
+	background-color: #333;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.gh-icon{
+	background-image: url(../media/GitHub-Mark-Light-32px.png);
+	background-position:center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px;
+	display:inline-block;
+}
+
+.colcont{
+	display: flex;
+	justify-content: space-around;
+}
+
+.star{
+	width: 200%;
+	background-size: contain;
+	background-repeat: repeat-x;
+	transform: translate(-100vw,0);
+}
+
+#prefooter{
+	height:30vw;
+}
+.footerlayer {
+	background-position: bottom center;
+	background-size: 60%;
+	background-repeat: repeat-x;
+	width: 200%;
+	height: 30vw;
+	position: absolute;
+	z-index: -1;
+	}
+
+#prefooter .layer-overlay{
+	background-size: cover;
+	width: 100%;
+}
+
+#prefooter .layer-4 {
+	position: absolute;
+	top:0;
+	background-size: 200%;
+	transform: translate(-50vw,0);
+}
+
+#prefooter .flip180{transform: translate(-50vw,0) rotate(180deg);}
+
+.footercol{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.ip{
+	text-align: center;
+	color: #130d0a;
+	font-size: large;
+}
+
+button{
+	border: none;
+	background-color: transparent;
+
+}
