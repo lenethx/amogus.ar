@@ -50,7 +50,7 @@
             <div class="layer-star1 star footerlayer just-hor-parallax"  data-depth="0.10"></div>
             <div class="layer-star2 star footerlayer just-hor-parallax"  data-depth="0.20"></div>
             <div class="layer-star3 star footerlayer just-hor-parallax"  data-depth="0.30"></div>
-            <div class="layer-overlay footerlayer"  data-depth="0.85"></div>
+            <div class="layer-overlay footerlayer just-parallax"  data-depth="0.85"></div>
             <div class="layer-4 footerlayer"></div>
             <div class="layer-4 footerlayer flip180"></div>
           </div>
@@ -58,24 +58,17 @@
         <footer>
           <div class="colcont">
             <div class="footercol">
-              <a class="tutorial-link" href="https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27">
-                    Hero "image" inspiration
-              </a>
-              <button onclick="modal.open('ipmodal')">
-                  Dont like the website?
-              </button>
-              <div id="ipmodal" style="display:none">
-                <div class="ip"><b>
-                  <?php echo $_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR']; ?>
-                </b></div>
-
-              </div>
+              <a class="tutorial-link" href="https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27">Hero "image" inspiration</a>
+              <button  onclick="modal.open('ipmodal')">Dont like the website?</button>
+              <span>test</span>
+              
             </div>
             <div class="footercol">
               <a href="https://github.com/lenethx/amogus.ar" class="github"><span class='gh-icon'></span>Contribute on Github</a>
-              <p>© <?php echo date("Y") ?> amogus.ar</p>    
+              <span>© <?php echo date("Y") ?> amogus.ar</span>    
             </div>
           </div>
+          <br><br><br><br><br><br><br><br><br><br><br>
           <!--<hr>-->
           
         </footer>
@@ -102,6 +95,15 @@
       
     </div>
     
+    <div class="popups">
+      <div id="ipmodal" >
+        <div class="ip">
+          <b>
+            <?php echo $_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR']; ?>
+          </b>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 

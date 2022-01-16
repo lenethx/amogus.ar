@@ -31,6 +31,10 @@ button,a {
 	cursor: pointer;
 }
 
+button{
+	transform: translate(-0.75rem,0);
+}
+
 button:hover,a:hover {
 	color: #928a86;
 }
@@ -181,7 +185,6 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	border-color: #ede0d5;
 	border-radius: 3px;
 	width:15.5rem;
-	margin: 0.5rem;
 	padding: 0.13em;
 	background-color: #333;
 	display: flex;
@@ -213,16 +216,19 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 
 #prefooter{
 	height:30vw;
+	overflow: hidden;
 }
 .footerlayer {
 	background-position: bottom center;
 	background-size: 60%;
 	background-repeat: repeat-x;
 	width: 200%;
-	height: 30vw;
+	height: 50vw;
 	position: absolute;
 	z-index: -1;
 	}
+
+
 
 #prefooter .layer-overlay{
 	background-size: cover;
@@ -234,14 +240,28 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	top:0;
 	background-size: 200%;
 	transform: translate(-50vw,0);
+	height: 30vw;
 }
 
 #prefooter .flip180{transform: translate(-50vw,0) rotate(180deg);}
 
+#prefooter .star{
+	height: 500vw;
+	background-size: 150vw;
+	background-repeat: repeat;
+	transform: translate(0 , -400vw);
+}
+
+footer{
+	font-family: serif;
+	color: #64554d;
+	margin: 3rem;
+}
+
 .footercol{
 	display: flex;
 	flex-direction: column;
-	
+	text-align: left;
 }
 
 .ip{
@@ -250,8 +270,6 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	font-size: large;
 }
 
-button{
-	border: none;
-	background-color: transparent;
-
+.popups{
+	display:none;
 }
