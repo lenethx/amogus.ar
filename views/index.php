@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amogus</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/hero.css?v=<?php echo rand(0,1000000) ?>">
     <link rel="stylesheet" href="css/modal.css">
-	  <script src="js/scroll.js?v=<?php echo rand(0,1000000) ?>" defer></script>
+    <link rel="stylesheet" href="css/hero.css?v=<?= rand(0,1000000) ?>">
+	  <script src="js/scroll.js?v=<?= rand(0,1000000) ?>" defer></script>
     <script src="js/modal.js" defer></script>
   </head>
   <body>
@@ -58,17 +58,18 @@
         <footer>
           <div class="colcont">
             <div class="footercol">
-              <a class="tutorial-link" href="https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27">Hero "image" inspiration</a>
-              <button  onclick="modal.open('ipmodal')">Dont like the website?</button>
-              <span>test</span>
+              <a class="tutorial-link" href="https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27" target="_blank" rel="noopener noreferrer">Hero "image" inspiration</a>
+              <button class="footerbutton" onclick="modal.open('ipmodal')">Dont like the website?</button>
+              <button class="footerbutton" onclick="modal.open('contactmodal')">Contact</button>
+              <span>Shoutout to big chungus</span>
               
             </div>
             <div class="footercol">
-              <a href="https://github.com/lenethx/amogus.ar" class="github"><span class='gh-icon'></span>Contribute on Github</a>
-              <span>© <?php echo date("Y") ?> amogus.ar</span>    
+              <a href="https://github.com/lenethx/amogus.ar" class="github footerbutton" target="_blank" rel="noopener noreferrer"><span class='gh-icon'></span>Contribute on Github</a>
+              <span>© <?= $date; ?> amogus.ar</span>    
             </div>
           </div>
-          <br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br>
           <!--<hr>-->
           
         </footer>
@@ -99,11 +100,25 @@
       <div id="ipmodal" >
         <div class="ip">
           <b>
-            <?php echo $_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR']; ?>
+            <?="$ip"?>
           </b>
         </div>
+        <iframe
+          width="450"
+          height="250"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/view?key=<?=mapsapikey?>&center=<?=$apidata->latitude?>,<?=$apidata->longitude?>&zoom=10" allowfullscreen>
+        </iframe> <!--REPLACE WITH OSM ASAP-->
+        
+      </div>
+      <div id="contactmodal">
+        contact@amogus.ar
       </div>
     </div>
+
+    <script>
+      console.log("<?= $debug ?>")
+    </script>
   </body>
 </html>
 

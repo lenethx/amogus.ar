@@ -1,11 +1,14 @@
 :root{
-	--content-height:none;
+	--text-color:#ede0d5;
+	--background-color:#130d0a;
+	--smalltext-color:#64554d;
+	--smalltext-hover:#928a86;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-color: #130d0a;
+    background-color: var(--background-color);
     font-family: "Playfair Display", serif;
     color: #fff;
 	overflow: overlay;
@@ -21,23 +24,30 @@ body::-webkit-scrollbar-thumb{
 	;
 }
 
-button,a {
+button,a:link {
 	background: none;
 	border: none;
 	padding: 0;
 	font-family: serif;
-	color: #64554d;
+	color: var(--smalltext-color);
 	text-decoration: underline;
 	cursor: pointer;
 }
 
-button{
-	transform: translate(-0.75rem,0);
+
+
+button:visited,a:visited {
+	color: var(--smalltext-color);
+}	
+
+button:hover,a:hover,button:active,a:active {
+	color: var(--smalltext-hover);
 }
 
-button:hover,a:hover {
-	color: #928a86;
-}
+
+
+
+
 
 #hero, #prefooter {
 height: 50vw;
@@ -48,7 +58,7 @@ position: relative;
 
 
 #content {
-background-color: #130d0a;
+background-color: var(--background-color);
 position: -webkit-sticky;
 position: sticky;
 top:50vw;
@@ -75,7 +85,7 @@ line-height: 120%;
 margin-bottom: 30px;
 }
 p {
-color: #ede0d5;
+color: var(--text-color);
 font-size: 18px;
 line-height: 150%;
 }
@@ -179,10 +189,10 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	will-change: transform;
 }
 
-.github{
+div .github{
 	border-style: solid;
 	border-width: 1px;
-	border-color: #ede0d5;
+	border-color: var(--text-color);
 	border-radius: 3px;
 	width:15.5rem;
 	padding: 0.13em;
@@ -254,22 +264,31 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 
 footer{
 	font-family: serif;
-	color: #64554d;
+	color: var(--smalltext-color);
 	margin: 3rem;
 }
 
 .footercol{
 	display: flex;
 	flex-direction: column;
-	text-align: left;
+	text-align: start;
 }
 
 .ip{
 	text-align: center;
-	color: #130d0a;
+	
 	font-size: large;
 }
 
 .popups{
 	display:none;
+}
+
+.modal-inner{
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+.footerbutton{
+	text-align: start;
 }

@@ -42,7 +42,7 @@ get('/item/$name', 'views/items.php');
 any('/404','views/404.php');
 */
 
-any('/','views/index.php');
+any('/','controllers/index.php');
 any('/tt','views/tt.php');
 any('/classic','views/classic.php');
 
