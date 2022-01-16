@@ -1,15 +1,10 @@
-# PHP ROUTER
+Source for https://amogus.ar. Runs on any php webserver with rewriterules and .htaccess enabled. The website is frecuently updated from this repository.
+Licenced under MIT
 
-Secure router with XSS and CSRF
 
-1. Download the file ".htaccess" and place it under the root directory of your application
 
-2. Download the file "router.php" and place it under the root directory of your application
-
-3. Download the file "routes.php" and place it under the root directory of your application
-
-In the browser go to "localhost" or "127.0.0.1" and you should see the word "Index" displayed in the website.
-
-Feel free to delete all the routes in the "routes.php" file and create your own. Most likely you want to keep the last route for "Page not found".
-
-For details about routing, visit https://phprouter.com
+Used resources:  
+https://phprouter.com  
+https://getbootstrap.com/docs/3.4/customize/  
+https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27  
+https://github.com/idurar/vanilla-js-modal  
