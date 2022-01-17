@@ -107,7 +107,10 @@
           width="450"
           height="250"
           frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/view?key=<?=mapsapikey?>&center=<?=$apidata->latitude?>,<?=$apidata->longitude?>&zoom=10" allowfullscreen>
+          scrolling="no" 
+          marginheight="0" 
+          marginwidth="0" 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=<?=$apidata->longitude-0.25?>%2C<?=$apidata->latitude-0.125?>%2C<?=$apidata->longitude+0.25?>%2C<?=$apidata->latitude+0.125?>&amp;layer=mapnik" allowfullscreen>
         </iframe> <!--REPLACE WITH OSM ASAP-->
         
       </div>
