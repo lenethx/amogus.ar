@@ -12,11 +12,38 @@ body {
     font-family: "Playfair Display", serif;
     color: #fff;
 	overflow: overlay;
+}
+body{
+	font-size: 16px;
+}
+@media (min-width: 768px) {
+	body{font-size: 18px;}
 
 }
+@media (min-width: 1024px) {
+	body {
+		font-size: 18px;
+   }
+}
+@media (min-width: 1366px) {
+	body {
+		font-size: 20px;
+   }
+}
+@media (min-width: 1920px) {
+	body {
+		font-size: 20px;
+   }
+}
+@media (min-width: 2560px) {
+	body {
+		font-size: 30px;
+   }
+}
+
 
 body::-webkit-scrollbar{
-    width: 4px;
+    width: 0.25em;
     background-color: transparent;
 }
 body::-webkit-scrollbar-thumb{
@@ -74,19 +101,19 @@ z-index: -1;
 }
 
 .first-section {
-padding: 50px 0 20px 0;
+padding: 3.125em 0 1.25em 0;
 }
 .text-header {
-font-size: 50px;
+font-size: 3.125em;
 text-align: center;
 }
 h1 {
 line-height: 120%;
-margin-bottom: 30px;
+margin-bottom: 1.875em;
 }
 p {
 color: var(--text-color);
-font-size: 18px;
+font-size: 1em;
 line-height: 150%;
 }
 #hero, .layer {
@@ -124,14 +151,14 @@ background-position: right bottom;
 background-size: 30.1vw 36vw;
 }
 .layer-4 {
-background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
+background-image: url("../media/hero/ilu_01.webp");
 position: -webkit-sticky;
 position: sticky;
 top:0;
 z-index: 2;
 }
 .layer-overlay {
-background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+background-image: url("../media/hero/ilu_overlay.webp");
 }
 @media only screen and (max-width: 768px) {
 	#hero, .layer {
@@ -157,8 +184,8 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 }
 
 .clarification{
-    font-size: 10px;
-    max-width: 300px;
+    font-size: 0.625em;
+    max-width: 18.75em;
 }
 
 .overimp{
@@ -185,30 +212,32 @@ background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_o
 	width: 100%;
 }
 
-.parallax, .hor-parallax, .impostor{
+.parallax, .hor-parallax, .impostor, .just-hor-parallax, .just-parallax{
 	will-change: transform;
 }
 
 div .github{
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0.06em;
 	border-color: var(--text-color);
-	border-radius: 3px;
-	width:15.5rem;
-	padding: 0.13em;
+	border-radius: 0.18em;
+	padding: 0.18em;
 	background-color: #333;
 	display: flex;
 	justify-content: space-around;
-	
+	background-image: url(../media/GitHub-Mark-Light-32px.png);
+	background-size: 11%;
+	background-repeat: no-repeat;
+	background-position: 2.5% center;
+	line-height: 1.3em;
 }
 
 .gh-icon{
-	background-image: url(../media/GitHub-Mark-Light-32px.png);
-	background-position:center center;
+	
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 16px;
-	width: 16px;
+	height: 0.7em;
+	width: 1.3em;
 	display:inline-block;
 }
 
@@ -265,13 +294,18 @@ div .github{
 footer{
 	font-family: serif;
 	color: var(--smalltext-color);
-	margin: 3rem;
+	margin: 3em;
+	font-size: 0.8em;
 }
 
 .footercol{
 	display: flex;
 	flex-direction: column;
 	text-align: start;
+}
+.footercol * {
+	white-space: nowrap;
+	font-size: 1em;
 }
 
 .ip{
@@ -292,3 +326,54 @@ footer{
 .footerbutton{
 	text-align: start;
 }
+
+
+.to-be-navbar-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;       
+	gap: 0.6em;
+	z-index: 5;
+}
+.to-be-navbar{
+	color:white;
+	font-family: Nunito, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	display: flex;
+	gap: 0.8em;
+	justify-content: center;
+}
+.navbar-link, .navbar-link:link, .navbar-link:hover, .navbar-link:visited{
+	color:inherit ; 
+	font-family: inherit ;
+	font-size: inherit ;
+	text-decoration: none ;
+	
+	
+}
+
+
+
+
+.dropdown-content {
+	max-height: 0;
+    display: block;
+    position: absolute;
+    box-shadow: 0px 0.5em 1em 0px rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+	overflow: hidden;
+	transition: max-height 0.2s steps(4);
+	transform: translateX(-0.16em);
+  }
+
+  .dropdown:hover .dropdown-content, #dropdown-link:focus + .dropdown-content{
+	max-height: calc(1.8em * 4);
+}
+
+  .dropdown-content a {
+    float: none;
+    display: block;
+	margin: 0.16em;
+	white-space: nowrap;  }
+  

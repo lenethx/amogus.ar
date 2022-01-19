@@ -1,0 +1,12 @@
+html {
+    max-width: 38rem;
+    padding: 2rem;
+    margin: auto;
+    line-height: 1.5rem;
+    font-size: 24px;
+  }
+
+  p,ul,ol {
+    color: #1d1d1d;
+    font-family: sans-serif;
+}
