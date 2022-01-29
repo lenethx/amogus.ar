@@ -2,6 +2,6 @@
 
 define('ipdatakey', '');
 $ipdatakey=ipdatakey;
-define('mapsapikey', '');
+define('mapsapikey', ''); //no longer used
 $mapsapikey=mapsapikey;
 ?>

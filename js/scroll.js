@@ -42,7 +42,7 @@ function applytransform(layers, beforestr, topDistance, ){
 			ignoredepth=false;
 		}
 	});
-	a+=beforestr.at(-1);
+	a+=beforestr[beforestr.length-1];
 
 	layer.style['-webkit-transform'] = a;
 	layer.style['-moz-transform'] = a;

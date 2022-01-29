@@ -368,7 +368,7 @@ footer{
   }
 
   .dropdown:hover .dropdown-content, #dropdown-link:focus + .dropdown-content{
-	max-height: calc(1.8em * 4);
+	max-height: calc(1.7em * 4);
 }
 
   .dropdown-content a {
