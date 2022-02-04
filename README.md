@@ -1,5 +1,5 @@
-Source for https://amogus.ar. Runs on any php webserver with rewriterules and .htaccess enabled. The website is frecuently updated from this repository.
-Licenced under MIT
+Source for https://amogus.ar. Written in vanilla HTML/CSS/JS with a couple libraries from CDNs. Runs on apache2 with rewriterules and .htaccess enabled. The website is updated from this repository.
+Licenced under MIT. 
 
 
 
