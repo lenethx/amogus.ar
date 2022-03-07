@@ -131,7 +131,7 @@
           scrolling="no" 
           marginheight="0" 
           marginwidth="0" 
-          src="https://www.openstreetmap.org/export/embed.html?bbox=<?=$apidata->longitude-0.25?>%2C<?=$apidata->latitude-0.125?>%2C<?=$apidata->longitude+0.25?>%2C<?=$apidata->latitude+0.125?>&amp;layer=mapnik" allowfullscreen>
+          src="https://www.openstreetmap.org/export/embed.html?bbox=<?=$apidata->longitude-0.02?>%2C<?=$apidata->latitude-0.01?>%2C<?=$apidata->longitude+0.02?>%2C<?=$apidata->latitude+0.01?>&amp;layer=mapnik" allowfullscreen>
         </iframe> <!--REPLACE WITH OSM ASAP-->
         
       </div>

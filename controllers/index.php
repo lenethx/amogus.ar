@@ -6,7 +6,7 @@ $ip=$_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['
 $date=date("Y");
 if ($ip=='::1' || !filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE  ) || !filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_RES_RANGE  )){
     $debug.="was $ip";
-    $ip='45.176.89.42';
+    $ip='0.0.0.0';
 } 
 
 $apidata=json_decode(file_get_contents("https://api.ipdata.co/${ip}?api-key=".ipdatakey));
