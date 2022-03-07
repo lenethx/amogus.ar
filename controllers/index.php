@@ -1,9 +1,10 @@
 <?php
-include_once('credentials.php');
+
+require_once('credentials.php');
 $debug='';
 $ip=$_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'];
 $date=date("Y");
-if ($ip=='::1' || filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE  ) || filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_RES_RANGE  )){
+if ($ip=='::1' || !filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE  ) || !filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_RES_RANGE  )){
     $debug.="was $ip";
     $ip='45.176.89.42';
 } 
